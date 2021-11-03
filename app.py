@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
+# src: https://www.youtube.com/watch?v=8SjF8CyfNM4
 # Crear la aplicación en flask
 app = Flask(__name__)
 # Configuración de la bd
@@ -68,5 +69,5 @@ class Languaje(db.Model):
 # Languaje.query.all()
 
 
-#join
-#db.session.query(Developer).join(Enterprise).filter(Enterprise.name=='google').first()
+# join
+# db.session.query(Developer).join(Enterprise).filter(Enterprise.name=='google').first()
