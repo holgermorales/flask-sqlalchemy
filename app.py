@@ -71,3 +71,4 @@ class Languaje(db.Model):
 
 # join
 # db.session.query(Developer).join(Enterprise).filter(Enterprise.name=='google').first()
+#db.session.query(Developer, Enterprise).join(Developer.enterprise).filter(Enterprise.name=='google').first()
