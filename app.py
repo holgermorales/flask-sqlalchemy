@@ -71,4 +71,12 @@ class Languaje(db.Model):
 
 # join
 # db.session.query(Developer).join(Enterprise).filter(Enterprise.name=='google').first()
-#db.session.query(Developer, Enterprise).join(Developer.enterprise).filter(Enterprise.name=='google').first()
+# db.session.query(Developer, Enterprise).join(Developer.enterprise).filter(Enterprise.name=='google').first()
+# @staticmethod
+#     def get_by_id_procedimiento(id_procedimiento) -> List[AsuntoProcedimiento]:
+#         resultQuery = db.session.query(AsuntoProcedimiento).join(AsuntoProcedimiento.procedimiento).filter(
+#             Procedimiento.id == id_procedimiento).filter(AsuntoProcedimiento.estado).all()
+#         asuntos: List[AsuntoProcedimiento] = []
+#         for item in resultQuery:
+#             asuntos.append(item)
+#         return asuntos
